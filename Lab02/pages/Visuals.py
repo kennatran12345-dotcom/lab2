@@ -51,7 +51,7 @@ if "jacketamount" not in st.session_state:
 shirtamount=st.slider("Number of shirts",0,10,key="shirtamount")
 pantsamount=st.slider("Number of pants",0,10,key="pantsamount")
 shoesamount=st.slider("Number of shoes",0,10,key="shoesamount")
-jacketamount=st.slider("Number of jacket",0,10,key="sjacketamount")
+jacketamount=st.slider("Number of jacket",0,10,key="jacketamount")
 
 shirtprice=values[0]
 pantsprice=values[1]
@@ -77,7 +77,7 @@ with st.expander("Click to see"):
 # PART 2: GRAPHS FROM data.csv
 # --- YOUR CODE GOES HERE ---
 st.header("Survey Results")
-data_csv=pd.read_csv("data.csv")
+data_csv=pd.read_csv(Path(__file__).resolve().parent.parent/"data.csv")
 st.dataframe(data_csv)
 
 fig, ax=plt.subplots()
