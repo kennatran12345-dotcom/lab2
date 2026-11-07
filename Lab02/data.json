@@ -1,0 +1,21 @@
+{
+    "chart_title": "Clothing Prices",
+    "data_points": [
+        {
+            "label": "Shirt",
+            "value": 15
+        },
+        {
+            "label": "Pants",
+            "value": 30
+        },
+        {
+            "label": "Shoes",
+            "value": 50
+        },
+ 	{
+    	    "label": "Jacket",
+            "value": 80
+	}
+    ]
+}
